@@ -6,13 +6,14 @@
 
         <title>Blog con Laravel v2 | @yield('title')</title>
 
-        <!-- Fonts -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         
     </head>
     <body>
-        
+        <nav class="d-flex justify-content-center">
+            <a href="/" class="nav-link">Home</a>
+            <a href="posts" class="nav-link">Posts</a>
+        </nav>
         <div class="container">
             @yield('content')
         </div>

@@ -10944,3 +10944,7 @@ a.text-dark:focus {
   }
 }
 
+.nav-link {
+  font-size: 20px;
+}
+
