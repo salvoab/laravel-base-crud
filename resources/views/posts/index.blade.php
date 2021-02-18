@@ -8,6 +8,7 @@
     <div class="jumbotron">
         <h1 class="display-3">Tutti i post del blog</h1>
         <p class="lead">Un elenco di tutti i post scritti in questo blog</p>
+        <a class="btn btn-primary" href="{{ route('posts.create') }}" role="button">Scrivi un post</a>
     </div>
     
 
