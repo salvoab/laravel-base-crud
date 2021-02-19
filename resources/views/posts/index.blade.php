@@ -30,7 +30,9 @@
                         <a class="btn btn-primary" href="{{ route('posts.show', ['post' => $post->id]) }}">
                             <i class="fas fa-eye fa-lg fa-fw"></i> Visualizza
                         </a>
-                        <i class="fas fa-pen fa-lg fa-fw"></i> Modifica |
+                        <a class="btn btn-secondary" href="{{ route('posts.edit', ['post' => $post->id]) }}">
+                            <i class="fas fa-pen fa-lg fa-fw"></i> Modifica
+                        </a>
                         <i class="fas fa-trash fa-lg fa-fw"></i>Cancella
                     </td>
                 </tr>
