@@ -26,14 +26,18 @@
                     <td>{{ $post->id }}</td>
                     <td>{{ $post->title }}</td>
                     <td>{{ $post->body }}</td>
-                    <td> 
+                    <td class="d-flex justify-content-between"> 
                         <a class="btn btn-primary" href="{{ route('posts.show', ['post' => $post->id]) }}">
                             <i class="fas fa-eye fa-lg fa-fw"></i> Visualizza
                         </a>
                         <a class="btn btn-secondary" href="{{ route('posts.edit', ['post' => $post->id]) }}">
                             <i class="fas fa-pen fa-lg fa-fw"></i> Modifica
                         </a>
-                        <i class="fas fa-trash fa-lg fa-fw"></i>Cancella
+                        <form action="{{ route('posts.destroy', ['post' => $post->id]) }}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger"><i class="fas fa-trash fa-lg fa-fw"></i>Cancella</button>
+                        </form>
                     </td>
                 </tr>
             @endforeach
