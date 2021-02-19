@@ -19,8 +19,8 @@
         </div>
 
         <div class="form-group">
-          <label for="article">Articolo</label>
-          <textarea class="form-control" name="article" id="article" rows="3"></textarea>
+          <label for="body">Articolo</label>
+          <textarea class="form-control" name="body" id="body" rows="3"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Invia</button>
