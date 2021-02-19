@@ -11,12 +11,13 @@
     </head>
     <body>
         <nav class="d-flex justify-content-center">
-            <a href="/" class="nav-link">Home</a>
-            <a href="posts" class="nav-link">Posts</a>
+            <a href="{{ route('home') }}" class="nav-link">Home</a>
+            <a href="{{route('posts.index')}}" class="nav-link">Posts</a>
         </nav>
         <div class="container">
             @yield('content')
         </div>
 
+        <footer></footer>
     </body>
 </html>

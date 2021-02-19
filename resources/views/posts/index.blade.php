@@ -25,7 +25,9 @@
                     <td>{{ $post->title }}</td>
                     <td>{{ $post->body }}</td>
                     <td> 
-                        <i class="fas fa-eye fa-lg fa-fw"></i> Visualizza |
+                        <a class="btn btn-primary" href="{{ route('posts.show', ['post' => $post->id]) }}">
+                            <i class="fas fa-eye fa-lg fa-fw"></i> Visualizza
+                        </a>
                         <i class="fas fa-pen fa-lg fa-fw"></i> Modifica |
                         <i class="fas fa-trash fa-lg fa-fw"></i>Cancella
                     </td>
