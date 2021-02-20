@@ -16,7 +16,7 @@
             <tr>
                 <th>ID</th>
                 <th>Titolo</th>
-                <th>Articolo</th>
+                <th>Estratto dell'Articolo</th>
                 <th>Azione</th>
             </tr>
         </thead>
@@ -25,7 +25,7 @@
                 <tr>
                     <td>{{ $post->id }}</td>
                     <td>{{ $post->title }}</td>
-                    <td>{{ $post->body }}</td>
+                    <td class="body-preview">{{ $post->body }}</td>
                     <td class="d-flex justify-content-between"> 
                         <a class="btn btn-primary" href="{{ route('posts.show', ['post' => $post->id]) }}">
                             <i class="fas fa-eye fa-lg fa-fw"></i> Visualizza
